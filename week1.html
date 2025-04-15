@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Suryansh Parashar" />
+    <title>Week 1 Assignment | 22BAI10241 - Suryansh Parashar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+
+      header {
+        /* margin-bottom: 3vh; */
+        background: #c0c2;
+        border-radius: 5px;
+        padding: 2vh;
+        box-shadow: 0 0 10px #8088;
+      }
+
+      h1 {
+        color: transparent;
+        background: linear-gradient(to right, #a0a, #404);
+        background-clip: text;
+        width: 40%;
+        margin: 0 auto;
+      }
+
+      main {
+        padding: 2vh 20vw;
+      }
+
+      p {
+        margin: 10px 0;
+        font-family: "Georgia", serif;
+        text-align: justify;
+        color: #404;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin: 3vh 0;
+      }
+
+      .image-section {
+        margin: 20px 0;
+      }
+
+      .image-section img {
+        mix-blend-mode: multiply;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .image-section figcaption {
+        text-align: center;
+        margin-top: 8px;
+        font-style: italic;
+        color: #555;
+      }
+
+      .button {
+        padding: 10px 20px;
+        /* border: 2px solid #007bff; */
+        background: linear-gradient(to top, #7b00ff, #5600b3);
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: all 300ms ease;
+      }
+
+      .button:hover {
+        box-shadow: 2px 2px 8px #5600b388;
+      }
+
+      table {
+        width: 70%;
+        margin: 0 auto 20px;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      form {
+        margin: 20px auto;
+        width: 300px;
+      }
+
+      form input {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      form button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Week 1 Assignment - Suryansh Parashar</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae
+          voluptatem similique magni earum reiciendis rerum facilis sunt
+          doloremque error dolorem, voluptas minima dolore voluptates inventore
+          aspernatur a tenetur minus nemo suscipit magnam deserunt? Sed ex,
+          sequi neque incidunt earum adipisci, at optio pariatur, veritatis
+          fugit iusto odio enim quisquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          quam, atque veniam at laudantium beatae? Odio velit nulla, quisquam
+          eius consectetur laborum culpa ducimus perferendis repellendus libero
+          esse quae alias maxime? Quo veritatis tenetur nulla, alias amet
+          eveniet voluptas, maiores excepturi, vitae provident beatae qui minus
+          quod voluptatem nemo obcaecati impedit unde quidem natus.
+        </p>
+      </section>
+
+      <section class="image-section">
+        <img src="./assets/vit-logo.jpg" alt="VIT Logo" />
+        <figcaption>VIT Bhopal University logo</figcaption>
+      </section>
+
+      <section>
+        <button class="button">GitHub</button>
+      </section>
+
+      <section>
+        <h2>Simple Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Row 2</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Row 3</td>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Simple Form</h2>
+        <form>
+          <input type="text" placeholder="Enter Username" name="username" required />
+          <input type="password" placeholder="Enter Password" name="password" required />
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      const githubButton = document.querySelector(".button");
+      githubButton.addEventListener("click", () => {
+        window.location.href =
+          "https://github.com/thesuryanshparashar/22BAI10241-SmartBridge-MERN-Assignment";
+      });
+    </script>
+  </body>
+</html>
